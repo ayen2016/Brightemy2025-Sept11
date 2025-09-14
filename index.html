@@ -298,65 +298,42 @@ window.addEventListener('resize', function() {
 <!-- /* Partner Section start */ -->
 
 
-<section class="partners-section">
-
+ <section class="partners-section">
   <div class="partners-container">
     <p class="partners-heading">
-     Strong Partnerships Driving Growth and Shared Success. 
+      Strong Partnerships Driving Growth and Shared Success.
     </p>
-    <ul class="partners-list">
+    <div class="marquee-wrapper">
+      <div class="marquee">
 
-      <!-- to go to previous format disconnect partnerpage.js and uncomment the li from below -->
-
-
-
-
-      
-      <!-- <li class="partner-item">
-        <img src="img/voktis group.png" alt="Volkswagen logo" loading="lazy">
-      </li>
-      <li class="partner-item">
-        <img src="img/sixteen foundation.png" alt="Samsung logo" loading="lazy">
-      </li> -->
-      <!-- <li class="partner-item">
-        <img src="img/voktis group.png" alt="Volkswagen logo" loading="lazy">
-      </li>
-      <li class="partner-item">
-        <img src="img/sixteen foundation.png" alt="Samsung logo" loading="lazy">
-      </li> -->
-      
+        <!-- Original logos -->
 
 
-    </ul>
+        <!-- <div class="partner-item"><img src="img/voktis group.png" alt="Voktis Group logo" loading="lazy"></div>
+        <div class="partner-item"><img src="img/sixteen foundation.png" alt="Sixteen Foundation logo" loading="lazy"></div>
+        <div class="partner-item"><img src="img/Partner Become.png" alt="Another logo" loading="lazy"></div>
+        <div class="partner-item"><img src="img/Partner Become.png" alt="Yet another logo" loading="lazy"></div> -->
+
+
+        <!-- Duplicate logos for seamless scroll -->
+
+
+        <!-- <div class="partner-item"><img src="img/voktis group.png" alt="Voktis Group logo" loading="lazy"></div>
+        <div class="partner-item"><img src="img/sixteen foundation.png" alt="Sixteen Foundation logo" loading="lazy"></div>
+        <div class="partner-item"><img src="img/Partner Become.png" alt="Another logo" loading="lazy"></div>
+        <div class="partner-item"><img src="img/Partner Become.png" alt="Yet another logo" loading="lazy"></div> -->
+
+        
+      </div>
+    </div>
   </div>
 </section>
 
 <script src="js/partnerpage.js"></script>
 
-<script>
-  
-  document.addEventListener("DOMContentLoaded", function() {
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("show");
-        } else {
-          entry.target.classList.remove("show"); // reset when out of view
-        }
-      });
-    }, { threshold: 0.2 }); // 20% visible
-
-    document.querySelectorAll(".partners-heading, .partner-item").forEach(el => {
-      observer.observe(el);
-    });
-  });
-
-</script>
-
-
-
-
 <!-- /* Partner Section stop */ -->
+
+
 
 
 
@@ -902,6 +879,7 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 </body>
 
 </html>
+
 
 
 
